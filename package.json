@@ -1,0 +1,26 @@
+{
+  "name": "restapisnode",
+  "version": "1.0.0",
+  "description": "Aprendiendo a crear REST APIS",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maikol8-10/restApisNodeJS.git"
+  },
+  "author": "Michael Vallejos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maikol8-10/restApisNodeJS/issues"
+  },
+  "homepage": "https://github.com/maikol8-10/restApisNodeJS#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^6.0.11"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  }
+}
