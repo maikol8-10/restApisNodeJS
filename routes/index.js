@@ -24,7 +24,20 @@ module.exports = function () {
     /**PRODUCTOS */
 
     //Agregar nuevos productos
-    router.post('/productos', productosController.subirArchivo, productosController.nuevoProducto)
+    router.post('/productos', productosController.subirArchivo, productosController.nuevoProducto);
+
+    //Muestra todos los productos
+    router.get('/productos', productosController.mostrarProductos)
+
+    //Muestra producto por ID
+    router.get('/productos/:idProducto', productosController.mostrarProducto);
+
+    //Actualizar producto
+    router.put('/productos/:idProducto', productosController.actualizarProducto);
+
+    //Eliminar producto
+    router.delete('/productos/:idProducto', productosController.eliminarProducto);
+
 
     return router;
 }
