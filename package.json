@@ -18,7 +18,9 @@
   "homepage": "https://github.com/maikol8-10/restApisNodeJS#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "mongoose": "^6.0.11"
+    "mongoose": "^6.0.11",
+    "multer": "^1.4.3",
+    "shortid": "^2.2.16"
   },
   "devDependencies": {
     "nodemon": "^2.0.14"

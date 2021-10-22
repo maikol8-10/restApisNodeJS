@@ -1,4 +1,4 @@
-const Clientes = require('../models/clientes');
+const Clientes = require('../models/Clientes');
 
 //Agrega un nuevo cliente
 
@@ -35,6 +35,35 @@ exports.mostrarCliente = async (req, res, next) => {
             next();
         }
         res.json(cliente);
+    } catch (error) {
+        //Si hay error, console.log y next 
+        console.log(error);
+        next();
+    }
+}
+
+//Actualizar cliente por su ID
+
+exports.actualizarCliente = async (req, res, next) => {
+    try {
+        const cliente = await Clientes.findByIdAndUpdate({_id: req.params.idCliente},
+            req.body,{
+            new: true
+        });
+        res.json(cliente);
+    } catch (error) {
+        //Si hay error, console.log y next 
+        console.log(error);
+        next();
+    }
+}
+
+//Eliminar cliente por su ID
+
+exports.eliminarCliente = async (req, res, next) => {
+    try {
+        const cliente = await Clientes.findByIdAndDelete({_id: req.params.idCliente});
+        res.json({mensaje: 'El cliente se ha eliminado'});
     } catch (error) {
         //Si hay error, console.log y next 
         console.log(error);

@@ -1,7 +1,8 @@
 const express = require('express');
 const router = express.Router();
 
-const clienteController = require('../controllers/clienteController')
+const clienteController = require('../controllers/clienteController');
+const productosController = require('../controllers/productosController');
 
 module.exports = function () {
 
@@ -12,8 +13,18 @@ module.exports = function () {
     router.get('/clientes', clienteController.mostrarClientes)
 
     //Muestra un cliente en especifico (ID)
-    router.get('/clientes/:idCliente', clienteController.mostrarCliente); 
+    router.get('/clientes/:idCliente', clienteController.mostrarCliente);
 
+    //Actualizar cliente
+    router.put('/clientes/:idCliente', clienteController.actualizarCliente);
+
+    //Eliminar cliente
+    router.delete('/clientes/:idCliente', clienteController.eliminarCliente);
+
+    /**PRODUCTOS */
+
+    //Agregar nuevos productos
+    router.post('/productos', productosController.subirArchivo, productosController.nuevoProducto)
 
     return router;
 }
