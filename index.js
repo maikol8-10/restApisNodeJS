@@ -26,5 +26,8 @@ app.use(cors());
 //Rutas de la App
 app.use('/', routes());
 
+//Carpeta Publica
+app.use(express.static('uploads'))
+
 //Puerto  
 app.listen(5000);
