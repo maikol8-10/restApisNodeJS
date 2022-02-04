@@ -36,11 +36,13 @@ module.exports = function () {
     router.get('/productos/:idProducto', productosController.mostrarProducto);
 
     //Actualizar producto
-    router.put('/productos/:idProducto', productosController.actualizarProducto);
+    router.put('/productos/:idProducto', productosController.subirArchivo, productosController.actualizarProducto);
 
     //Eliminar producto
     router.delete('/productos/:idProducto', productosController.eliminarProducto);
 
+    //Busqueda de productos
+    router.post('/productos/busqueda/:query', productosController.buscarProducto);
 
     /**PEDIDOS */
 
