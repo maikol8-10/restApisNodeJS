@@ -1,0 +1,4 @@
+{"_id":{"$oid":"616f576f2cf1d385eda1d69a"},"nombre":"Michael","apellido":"Vallejos Silva","empresa":"Sysco Consultores","email":"maikol8-10@hotmail.com","telefono":"123","__v":0}
+{"_id":{"$oid":"616f655b6ce82c342d1685da"},"nombre":"Lucia","apellido":"Vallejos","empresa":"Facebook","email":"katherine@hotmail.com","telefono":"85132024","__v":0}
+{"_id":{"$oid":"61a165d351a941c1e44a967a"},"nombre":"Stephanny","apellido":"Mora","empresa":"Steph Boutique","email":"steph@hotmail.com","telefono":"85132024","__v":0}
+{"_id":{"$oid":"61d77604f5f96fd242783c63"},"nombre":"Mileysi","apellido":"Esquivel","empresa":"Hotel El Sitio","email":"mileysi@hotmail.com","telefono":"85964575","__v":0}

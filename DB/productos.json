@@ -1,0 +1,7 @@
+{"_id":{"$oid":"61723c808acc5011f033eb0c"},"nombre":"JavaScript ES6","precio":"50","imagen":"15Ajh86wH.jpeg","__v":0}
+{"_id":{"$oid":"61723c918acc5011f033eb0e"},"nombre":"TypeScript","precio":"25","imagen":"4jA2OxcBE.jpeg","__v":0}
+{"_id":{"$oid":"61f8b3bd7e9193bcbe158e69"},"nombre":"Camiseta SASS","precio":"45","imagen":"UfMpTP1rQ.jpeg","__v":0}
+{"_id":{"$oid":"61f8b3f27e9193bcbe159a23"},"nombre":"Camiseta NodeJs","precio":"100","imagen":"WS2VYrFkE.jpeg","__v":0}
+{"_id":{"$oid":"61f8b41f7e9193bcbe15a2a5"},"nombre":"Camiseta AngularJs","precio":"50","imagen":"MlGOdjHcT.jpeg","__v":0}
+{"_id":{"$oid":"61f8b43a7e9193bcbe15a671"},"nombre":"Camiseta VueJs","precio":"45","imagen":"QQv_UK4Ic.jpeg","__v":0}
+{"_id":{"$oid":"61f9b0bfbfc0d4abcf5f65f2"},"nombre":"Camiseta React","precio":"100","imagen":"v1FjofnZd.jpeg","__v":0}

@@ -4,7 +4,6 @@ module.exports = (req, res, next) => {
 
     //Autorización por medio del header
     const authHeader = req.get('Authorization');
-    console.log(authHeader);
 
     if (!authHeader) {
         const error = new Error('No autenticado, no hay JWD');
