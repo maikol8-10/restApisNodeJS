@@ -16,6 +16,9 @@ mongoose.connect(process.env.DB_URL, {
 
 const app = express();
 
+//Carpeta Publica
+app.use(express.static('uploads'))
+
 //Habilitar bodyParser
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -42,9 +45,6 @@ app.use(cors(corsOptions));
 
 //Rutas de la App
 app.use('/', routes());
-
-//Carpeta Publica
-app.use(express.static('uploads'))
 
 const host = process.env.HOST || '0.0.0.0';
 const port = process.env.PORT || 5000;
