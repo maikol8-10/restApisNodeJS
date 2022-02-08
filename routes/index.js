@@ -24,15 +24,15 @@ module.exports = function () {
     router.get('/clientes/:idCliente', auth, clienteController.mostrarCliente);
 
     //Actualizar cliente
-    router.put('/clientes/:idCliente', auth, clienteController.actualizarCliente);
+    router.put('/clientes/:idCliente', clienteController.actualizarCliente);
 
     //Eliminar cliente
-    router.delete('/clientes/:idCliente', auth, clienteController.eliminarCliente);
+    router.delete('/clientes/:idCliente', clienteController.eliminarCliente);
 
     /**PRODUCTOS */
 
     //Agregar nuevos productos
-    router.post('/productos', auth, productosController.subirArchivo, productosController.nuevoProducto);
+    router.post('/productos', productosController.subirArchivo, productosController.nuevoProducto);
 
     //Muestra todos los productos
     router.get('/productos', auth, productosController.mostrarProductos)
@@ -44,15 +44,15 @@ module.exports = function () {
     router.put('/productos/:idProducto', auth, productosController.subirArchivo, productosController.actualizarProducto);
 
     //Eliminar producto
-    router.delete('/productos/:idProducto', auth, productosController.eliminarProducto);
+    router.delete('/productos/:idProducto', productosController.eliminarProducto);
 
     //Busqueda de productos
-    router.post('/productos/busqueda/:query', auth, productosController.buscarProducto);
+    router.post('/productos/busqueda/:query', productosController.buscarProducto);
 
     /**PEDIDOS */
 
     //Agrega nuevos pedidos
-    router.post('/pedidos/nuevo/:idUsuario', auth, pedidosController.nuevoPedido);
+    router.post('/pedidos/nuevo/:idUsuario', pedidosController.nuevoPedido);
 
     //Mostrar todos los pedidos
     router.get('/pedidos', auth, pedidosController.mostrarPedidos);
