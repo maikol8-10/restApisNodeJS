@@ -24,7 +24,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 //Definir un dominio(s) para recibir las peticiones
-const whitelist = [process.env.FRONTEND_URL];
+const whitelist = [process.env.FRONTEND_URL, 'http://localhost:5000', 'http://cloudmich.fun'];
 //Opciones de CORS
 const corsOptions = {
 
@@ -41,7 +41,8 @@ const corsOptions = {
 }
 
 //Hablilitar CORS
-app.use(cors(corsOptions));
+app.use(cors());
+//app.use(cors(corsOptions));
 
 //Rutas de la App
 app.use('/', routes());

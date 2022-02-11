@@ -15,10 +15,10 @@ module.exports = function () {
     /**CLIENTES */
 
     //Agrega nuevos clientes via POST
-    router.post('/clientes', auth, clienteController.nuevoCliente)
+    router.post('/clientes', clienteController.nuevoCliente)
 
     //Obtener todos los clientes via GET
-    router.get('/clientes', auth, clienteController.mostrarClientes)
+    router.get('/clientes', clienteController.mostrarClientes)
 
     //Muestra un cliente en especifico (ID)
     router.get('/clientes/:idCliente', auth, clienteController.mostrarCliente);
